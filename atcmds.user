@@ -1,0 +1,87 @@
+-------------L850-GL-------------;START
+Restart;AT+CFUN=1,1
+Cek Mode;AT+GTUSBMODE?
+Mode NCM;AT+GTUSBMODE=0
+Mode MBIM;AT+GTUSBMODE=7
+> B1;AT+XACT=2,,,101
+> B3;AT+XACT=2,,,103
+> B5;AT+XACT=2,,,105
+> B8;AT+XACT=2,,,108
+> B40;AT+XACT=2,,,140
+> B1 & B3;AT+XACT=2,,,101,103
+> B1 & B8;AT+XACT=2,,,101,108
+> B3 & B8;AT+XACT=2,,,103,108
+> B1 & B40;AT+XACT=2,,,101,140
+> B3 & B40;AT+XACT=2,,,103,140
+> B5 & B40;AT+XACT=2,,,105,140
+> B8 & B40;AT+XACT=2,,,108,140
+> B1, B3 & B8;AT+XACT=2,,,101,103,108
+> B1, B3 & B40;AT+XACT=2,,,101,103,140
+> B1, B8 & B40;AT+XACT=2,,,101,108,140
+> B3, B8 & B40;AT+XACT=2,,,103,108,140
+> B1, B3, B8 & B40;AT+XACT=2,,,101,103,108,140
+Tes AT;AT
+Date built;ATI
+Firmware version;ATI8
+Cek IMEI;AT+CGSN
+Cek nomor IMSI SIM;AT+CIMI
+Cek mode modem;AT+GTUSBMODE?
+Mode NCM;AT+GTUSBMODE=0
+Mode MBIM;AT+GTUSBMODE=7
+Cek Volt;AT+CBC
+Restart modem;AT+CFUN=1,1
+Sinyal;AT+CESQ
+Sinyal RSSI;AT+CSQ?
+Sinyal RSRQ & RSRP;AT+XCESQ?
+Current band;AT+XCCINFO?
+Cek CA band;AT+XLEC?
+Cek CA band;AT+GTCAINFO?
+-------------EM7430-------------;START
+Restart;at!reset
+Open Bitmask;AT!ENTERCND="A710"
+Enable CA;AT!LTECA=1
+Disable GPS;AT!GPSEND
+Cek Temperature;AT!PCTEMP?
+Cek Voltase;AT!PCVOLT?
+Cek Band;AT!BAND=?
+Set Band 1;AT!BAND=10
+Set Band 3;AT!BAND=11
+Set Band 8;AT!BAND=12
+Set Band 40;AT!BAND=13
+Set Band 1+8;AT!BAND=0D
+Set Band 3+8;AT!BAND=0E
+Set Band 1+3+8;AT!BAND=0F
+-------------EM7345-------------;START
+Restart;AT+CFUN=1,1
+Cek Band;AT+XREG?
+Set Band 1;AT+XACT=2,,,101
+Set Band 3;AT+XACT=2,,,103
+Set Band 8;AT+XACT=2,,,108
+Set Band 1+3;AT+XACT=2,,,101,103
+Set Band 1+8;AT+XACT=2,,,101,108
+Set Band 1+3+8;AT+XACT=2,,,101,103,108
+2G Only;AT+XACT=0
+3G Only;AT+XACT=1
+4G Only;AT+XACT=2
+All Band;AT+XACT=6,2,1,900,1800,1900,850,1,2,4,5,8,101,102,103,104,105,107,108,113,117,118,119,120
+-------------STANDARD-------------;START
+Debug Info;AT^DEBUG?
+Temperature;AT+TEMP
+Voltase;AT+VOLT
+CA Info;AT^CA_INFO?
+Display Selected Band;AT^SLBAND?
+Lock Band 1;AT^SLBAND=LTE,1
+Lock Band 3;AT^SLBAND=LTE,3
+Lock Band 8;AT^SLBAND=LTE,8
+Lock Band 40;AT^SLBAND=LTE,40
+Lock Band 1 & 3;AT^SLBAND=LTE,1,3
+Lock Band 3 & 8;AT^SLBAND=LTE,3,8
+Lock Band 3 & 40;AT^SLBAND=LTE,3,40
+Lock Band 1, 3 & 8;AT^SLBAND=LTE,1,3,8,40
+Reset Selected Band;AT^SLBAND
+Enable CA;AT^CA_ENABLE=0
+Disable CA;AT^CA_ENABLE=1
+Lock LTE Only;AT^SLMODE=1,30
+LTE CAT Info;AT^GETLTECAT?
+Restart Modem;AT^RESET
+Scann Cell;AT+VZWRSRP?
