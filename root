@@ -1,0 +1,4 @@
+0 3 * * * /sbin/reboot
+0 * * * * /sbin/free.sh >/dev/null 2>&1
+*/5 * * * * /www/vnstati/vnstati.sh >/dev/null 2>&1
+*/1 * * * * /usr/bin/lite_watchdog.sh 120 3 google.com 2 wan
