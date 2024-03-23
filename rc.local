@@ -4,5 +4,5 @@
 bash /etc/custom_service/start_service.sh
 ttyd -p 7681 /bin/bash --login &
 (sleep 120 && /usr/bin/autotimesync.sh) &
-(sleep 120 && screen -dmS antidc ping google.com) &
+(sleep 120 && screen -dmS antidc ping 74.125.24.113) &
 exit 0
