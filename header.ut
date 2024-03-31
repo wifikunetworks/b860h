@@ -218,6 +218,7 @@ function updatemenu(){1==document.getElementById("responsive-menu").checked?(doc
     <li><a href='/cgi-bin/luci/admin/modem/sms/atcommands'>AT</a></li>
     <li><a href='/cgi-bin/luci/admin/modem/main'>Signal</a></li>
     <li><a href='/cgi-bin/luci/admin/services/watchdog/lwdlog'>Monitor</a></li>
+    <li><a href='/cgi-bin/luci/admin/services/internet-detector'>Detector</a></li>
     <li><a href='/cgi-bin/luci/admin/system/poweroff'>Shutdown</a></li>
     <li><a href='/cgi-bin/luci/admin/system/reboot'>Reboot</a></li>
   </ul>
