@@ -213,8 +213,8 @@ function updatemenu(){1==document.getElementById("responsive-menu").checked?(doc
     <li><a href='/cgi-bin/luci/admin/services/tailscale'>Tailscale</a></li>
     <li><a href='/cgi-bin/luci/admin/network/wireless'>Wireless</a></li>
     <li><a href='/cgi-bin/luci/admin/system/crontab'>Cron</a></li>
-    <li><a href='/cgi-bin/luci/admin/modem/sms/sendsms'>Send SMS</a></li>
-    <li><a href='/cgi-bin/luci/admin/modem/sms/readsms'>Read SMS</a></li>
+    <li><a href='/cgi-bin/luci/admin/modem/luci-app-sms-tool-js/sendsms'>Send SMS</a></li>
+    <li><a href='/cgi-bin/luci/admin/modem/luci-app-sms-tool-js/readsms'>Read SMS</a></li>
     <li><a href='/cgi-bin/luci/admin/modem/sms/atcommands'>AT</a></li>
     <li><a href='/cgi-bin/luci/admin/modem/main'>Signal</a></li>
     <li><a href='/cgi-bin/luci/admin/services/watchdog/lwdlog'>Monitor</a></li>
