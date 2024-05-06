@@ -1,3 +1,3 @@
 0 * * * * /sbin/free.sh >/dev/null 2>&1
 */5 * * * * /www/vnstati/vnstati.sh >/dev/null 2>&1
-*/1 * * * * /usr/bin/lite_watchdog.sh 120 3 google.com 2 wan
+0 */2 * * * sshpass -p admin ssh -o HostKeyAlgorithms=+ssh-rsa root@192.168.8.1 "echo -e 'AT+CFUN=0\r\n' > /dev/ttyUSB2"
