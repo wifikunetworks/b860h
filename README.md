@@ -26,8 +26,6 @@ wget --no-check-certificate -O /usr/bin/lite_watchdog.sh https://raw.githubuserc
 # INSTALL SMS TOOL
 opkg remove --force-remove luci-app-sms-tool-js && rm /etc/config/sms_tool_js ; wget --no-check-certificate -P /root https://raw.githubusercontent.com/wifikunetworks/b860h/main/luci-app-sms-tool-js_2.0.20-20240201_all.ipk && opkg install --force-reinstall /root/luci-*-sms*.ipk && rm /root/*.ipk
 
-# INSTALL OPENCLASH
-wget --no-check-certificate -P /root https://github.com/wifikunetworks/b860h/raw/main/luci-app-openclash_0.46.003-beta_all.ipk && opkg install --force-overwrite /root/luci-*-openclash*.ipk && rm /root/*.ipk
 ~~~
 PART 2
 ~~~
