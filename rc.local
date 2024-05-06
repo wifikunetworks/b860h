@@ -4,5 +4,5 @@
 bash /etc/custom_service/start_service.sh
 ttyd -p 7681 /bin/bash --login &
 (sleep 120 && /usr/bin/autotimesync.sh) &
-#(sleep 60 && /www/antibengong/lite.sh) &
+(sleep 80 && /www/ping-monitor/ping.sh) &
 exit 0
